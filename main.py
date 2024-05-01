@@ -3,9 +3,9 @@ import json
 import numpy as np
 import pickle
 
-with open("C:/Users/vsoun/OneDrive/Documents/cancer-death-rates/columns.json","r") as f:
+with open("./cancer-death-rates/columns.json","r") as f:
     __data_columns=json.load(f)['data_columns']
-with open('C:/Users/vsoun/OneDrive/Documents/cancer-death-rates/cancer_death_decisiontree.pkl', 'rb') as f:
+with open('./cancer-death-rates/cancer_death_decisiontree.pkl', 'rb') as f:
     __model = pickle.load(f)
 
 st.title("Cancer Death Rate Status")
